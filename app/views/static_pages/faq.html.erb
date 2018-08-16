@@ -5,9 +5,6 @@
 			<div class="container">
 				<div class="banner-inner-content">
 					<h2 class="banner-inner-title">FAQ</h2>
-					<ul class="xs-breadcumb">
-						<li><a href="index.html"> Home  / </a> <a href="index.html">Pages /</a>  faq</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -171,16 +168,16 @@
                         <h4 class="widget-title"><span class="light-text">Our</span>  services</h4>
                         <ul class="list-group">
                             <li>
-                                <a href="#">Gardening </a>
+                                <%= link_to 'Lawn care', lawn_care_path %>
                             </li>
                             <li>
-                                <a href="#">Grass trimming</a>
+                                <a href="#">Garden maintenance</a>
                             </li>
                             <li>
-                                <a href="#">Caring</a>
+                                <a href="#">Landscaping</a>
                             </li>
                             <li>
-                                <a href="#">Urban gardening</a>
+                                <a href="#">Roof gutter cleaning</a>
                             </li>
 
                         </ul>
@@ -203,7 +200,7 @@
                <p>Be brought first whales he signs thing our give were all fowl sea upon make firmament called face, together. 
                    I third deep days fifth spirit you're is you're saw bearing 
                 </p>
-                <a href="#" class="xs-btn fill">CONTACT US</a>
+                <%= link_to 'CONTACT US', contact_path, class: "xs-btn fill" %>
            </div>
        </div>
     </div><!-- .container end -->
