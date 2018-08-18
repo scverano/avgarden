@@ -23,4 +23,5 @@
 //= require template/jquery.appear.min
 //= require template/isotope
 //= require template/wow.min
+//= require template/jquery.nanogallery2.min
 //= require template/main

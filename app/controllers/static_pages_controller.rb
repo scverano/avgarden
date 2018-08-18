@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  include StaticPagesHelper
+
   def index
   end
   
@@ -6,5 +8,8 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+  end
+
+  def our_work
   end
 end
