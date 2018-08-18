@@ -1,6 +1,6 @@
 <!-- start banner section -->
 <section class="xs-banner-sec xs-banner-v2-sec owl-carousel banner-slider">
-    <div class="banner-slider-item banner-item3" style="background-image: url(<%= asset_path 'avgarden/IMG_1609.jpg' %>);">
+    <div class="banner-slider-item banner-item3" style="background-image: url(<%= cloudinary_url 'avgarden/Photo-30.jpg', :crop => "scale", :width => 1600 %>);">
         <div class="slider-table">
             <div class="slider-table-cell">
                 <div class="container">
@@ -20,7 +20,7 @@
         </div><!-- .slider table end -->
     </div><!-- .xs-welcome-content END -->
 
-    <div class="banner-slider-item banner-item2" style="background-image: url(<%= asset_path 'avgarden/IMG_1666.jpg' %>);">
+    <div class="banner-slider-item banner-item2" style="background-image: url(<%= cloudinary_url 'avgarden/Photo-13.jpg', :crop => "scale", :width => 1600 %>);">
         <div class="slider-table">
             <div class="slider-table-cell">
                 <div class="container">
@@ -42,7 +42,7 @@
         </div><!-- .slider table end -->
     </div><!-- .xs-welcome-content END -->
 
-    <div class="banner-slider-item banner-item1" style="background-image: url(<%= asset_path 'avgarden/IMG_2951.jpg' %>);">
+    <div class="banner-slider-item banner-item1" style="background-image: url(<%= cloudinary_url 'avgarden/Photo-14.jpg', :width => 1600 %>);">
         <div class="slider-table">
             <div class="slider-table-cell">
                 <div class="container">
@@ -81,7 +81,12 @@
             <div class="col-lg-2 col-md-12">
                 <div class="nav flex-column about-tabs-menu" id="v-pills-tab" role="tablist"
                      aria-orientation="vertical">
-                    <a class="active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    <a class="active" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                       aria-controls="v-pills-messages" aria-selected="false">
+                        <i class="icon-grass"></i>
+                        Grass and Hedge cutting
+                    </a>
+                    <a class="" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
                        aria-controls="v-pills-profile" aria-selected="false">
                         <i class="icon-caring"></i>
                         Lawn care
@@ -91,29 +96,62 @@
                         <i class="icon-planting-and-growth"></i>
                         Planting & Growth
                     </a>
-                    <a class="" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                       aria-controls="v-pills-messages" aria-selected="false">
-                        <i class="icon-grass"></i>
-                        Grass and Hedge cutting
-                    </a>
                 </div>
             </div>
             <div class="col-lg-10 col-md-12">
-              <%#= yield %>
                 <div class="about-tabs-item">
                     <div class="tab-content" id="v-pills-tabContent">
-                        
-                        <div class="tab-pane show active" id="v-pills-profile" role="tabpanel"
-                             aria-labelledby="v-pills-profile-tab">
+                        <div class="tab-pane show active" id="v-pills-messages" role="tabpanel"
+                             aria-labelledby="v-pills-messages-tab">
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="about-tabs-img">
-                                      <%= image_tag 'avgarden/IMG_2292.jpg' %>
+                                      <%= cl_image_tag "avgarden/Photo-10.jpg", :crop => "scale", :width => 600 %>
                                     </div>
                                 </div>
                                 <div class="col-md-7 align-self-center">
                                     <div class="about-tabs-content">
-                                        <h4>Caring</h4>
+                                        <h4>Grass and Hedge cutting</h4>
+                                        <p>
+                                            Sagittis sem blandit tempor donec ridiculus bibendum adipiscing pellentesque
+                                            sollicitudin, interdum aptent arcu rutrum penatibus sociis. Hendrerit
+                                            feugiat lobortis hendrerit. Auctor tortor.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <i class="icon icon-checked2"></i>
+                                                Green whales years waters whose spirit.
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-checked2"></i>
+                                                Bibendum adipiscing pellentesque sollicitudin.
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-checked2"></i>
+                                                Green whales years waters.
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-checked2"></i>
+                                                Subdue unto wherein dry man heaven.
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="xs-btn xs-v2-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="v-pills-profile" role="tabpanel"
+                             aria-labelledby="v-pills-profile-tab">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="about-tabs-img">
+                                      <%= cl_image_tag "avgarden/IMG_2951.jpg", :crop => "scale", :width => 600 %>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 align-self-center">
+                                    <div class="about-tabs-content">
+                                        <h4>Lawn care</h4>
                                         <p>
                                             Insect and weed control. Great lawn care works hard on preventing and controlling the spread of various weeds and pests as they pop up on your lawn throughout the year. Soil aeration and other services. Services such as soil aeration that give your soil room to breathe and your grass room to grow.
                                         </p>
@@ -146,7 +184,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="about-tabs-img">
-                                      <%= image_tag 'avgarden/IMG_2959.jpg' %>
+                                      <%= cl_image_tag "avgarden/IMG_2959.jpg", :crop => "scale", :width => 600 %>
                                     </div>
                                 </div>
                                 <div class="col-md-7 align-self-center">
@@ -180,46 +218,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="tab-pane" id="v-pills-messages" role="tabpanel"
-                             aria-labelledby="v-pills-messages-tab">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="about-tabs-img">
-                                      <%= image_tag 'avgarden/IMG_1607.jpg' %>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 align-self-center">
-                                    <div class="about-tabs-content">
-                                        <h4>Grass trimming</h4>
-                                        <p>
-                                            Sagittis sem blandit tempor donec ridiculus bibendum adipiscing pellentesque
-                                            sollicitudin, interdum aptent arcu rutrum penatibus sociis. Hendrerit
-                                            feugiat lobortis hendrerit. Auctor tortor.
-                                        </p>
-                                        <ul>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Green whales years waters whose spirit.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Bibendum adipiscing pellentesque sollicitudin.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Green whales years waters.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Subdue unto wherein dry man heaven.
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="xs-btn xs-v2-btn">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -233,7 +231,7 @@
         <div class="row">
             <div class="col-lg-7 xs-padding-0 align-self-center">
                 <div class="video-item">
-                    <%= image_tag 'avgarden/IMG_1999.jpg' %>
+                    <%= cl_image_tag "avgarden/IMG_1999.jpg", :crop => "scale", :width => 1600 %>
                     <a href="https://www.youtube.com/watch?v=pYwBDEV5vnA" class="video-play-btn"><i class="icon icon-play-button2"></i></a>
                 </div>
             </div>
@@ -326,7 +324,7 @@
             </div><!-- col end-->
             <div class="col-lg-4">
                 <div class="services-img">
-                    <%= image_tag 'services/service-v2.png' %>
+                    <%= cl_image_tag "avgarden/Photo-33.jpg", :crop => "scale", :height => 1120 %>
                 </div>
             </div>
         </div><!-- row end-->
@@ -401,7 +399,7 @@
         <div class="xs-portfolio-grid grid">
             <div class="xs-portfolio-grid-item category1 grid-item all">
                 <a href="#popup_1" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in">
-                    <%= image_tag 'avgarden/IMG_1609.jpg' %>
+                    <%= cl_image_tag "avgarden/IMG_1609", :crop => "scale", :height => 300 %>
                     <div class="single-project-content">
                         <div class="xs-image-popup-icon">
                             <i class="icon icon-plus"></i>
@@ -416,7 +414,7 @@
                     <div class="row">
                         <div class="col-lg-5 xs-padding-0">
                             <div class="xs-popup-img">
-                              <%= image_tag 'avgarden/IMG_1609.jpg', class: 'img-gallery-popup' %>
+                              <%= cl_image_tag "avgarden/IMG_1609", :crop => "scale", :height => 500, class: 'img-gallery-popup' %>
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -480,7 +478,7 @@
 
             <div class="xs-portfolio-grid-item category2 grid-item all">
                 <a href="#popup_2" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in">
-                    <%= image_tag 'avgarden/IMG_1994.jpg' %>
+                    <%= cl_image_tag "avgarden/IMG_1994", :crop => "scale", :height => 300 %>
                     <div class="single-project-content">
                         <div class="xs-image-popup-icon">
                             <i class="icon icon-plus"></i>
@@ -495,7 +493,7 @@
                     <div class="row">
                         <div class="col-lg-5 xs-padding-0">
                             <div class="xs-popup-img">
-                                <%= image_tag 'avgarden/IMG_1994.jpg', class: 'img-gallery-popup' %>
+                                <%= cl_image_tag "avgarden/IMG_1994", :crop => "scale", :height => 500, class: 'img-gallery-popup' %>
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -558,7 +556,7 @@
             </div><!-- .xs-portfolio-grid-item END -->
             <div class="xs-portfolio-grid-item category3 grid-item all">
                 <a href="#popup_3" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in">
-                    <%= image_tag 'avgarden/IMG_1666.jpg' %>
+                    <%= cl_image_tag "avgarden/IMG_1666", :crop => "scale", :height => 300 %>
                     <div class="single-project-content">
                         <div class="xs-image-popup-icon">
                             <i class="icon icon-plus"></i>
@@ -573,7 +571,7 @@
                     <div class="row">
                         <div class="col-lg-5 xs-padding-0">
                             <div class="xs-popup-img">
-                              <%= image_tag 'avgarden/IMG_1666.jpg', class: 'img-gallery-popup' %>
+                              <%= cl_image_tag "avgarden/IMG_1666", :crop => "scale", :height => 500, class: 'img-gallery-popup' %>
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -854,9 +852,9 @@
         </div><!-- row end-->
 
         <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-4 col-md-12">
                 <div class="single-tips-tricks">
-                    <%= image_tag 'tips-img1.jpg' %>
+                    <%= cl_image_tag "avgarden/Photo-27", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
                         <span>24 jan, 2018</span>
                         <h3>Moving good spirit</h3>
@@ -866,9 +864,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="single-tips-tricks tips-tricks-item">
-                    <%= image_tag 'tips-img2.jpg' %>
+                    <%= cl_image_tag "avgarden/Photo-4", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
                         <span>24 jan, 2018</span>
                         <h4>Moving good spirit</h4>
@@ -877,9 +875,9 @@
                     <div class="tag-line">Urban Garden</div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="single-tips-tricks tips-tricks-item">
-                    <%= image_tag 'tips-img3.jpg' %>
+                    <%= cl_image_tag "avgarden/Photo-35", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
                         <span>24 jan, 2018</span>
                         <h4>Moving good spirit</h4>
