@@ -242,7 +242,7 @@
                         <h3><i class="icon icon-user-1"></i> Get a <span>call back</span></h3>
                         <p class="call-contact-text">
                             Lesser itself let won't over one signs unto you stars.
-                           <span> 25% Discount for your 1st Lawn</span>
+                           <span> Tell us your needs</span>
                         </p>
                         <form class="call-back-form">
                             <div class="form-group">
@@ -332,7 +332,7 @@
 </section><!-- End  service section -->
 
 <!-- start funfact section -->
-<section class="funfact-sec funfact-v2-sec" style="background: url(<%= asset_path 'funfact-bg-v2.jpg' %>);">
+<section class="funfact-sec funfact-v2-sec" style="background-color: black">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 align-self-center">
@@ -363,7 +363,7 @@
                         <div class="single-funfact">
                             <i class="icon-fun_fact_4"></i>
                             <h3 class="funfact-title" data-counter="50">50 <strong>+</strong></h3>
-                            <p>happy customer</p>
+                            <p>happy clients</p>
                         </div>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
                     <ul class="work-folio-menu">
                         <li class="active filter" data-filter=".all">All</li>
                         <li class="filter" data-filter=".category1">Gardening</li>
-                        <li class="filter" data-filter=".category2">Fall cleanup</li>
+                        <li class="filter" data-filter=".category2">Landscaping</li>
                         <li class="filter" data-filter=".category3">Watering</li>
                     </ul>
 
@@ -638,7 +638,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="load-more-btn">
-                    <a href="" class="xs-btn xs-v2-btn">More View</a>
+                    <%= link_to 'More View', our_work_path, class: "xs-btn xs-v2-btn" %>
                 </div>
             </div>
         </div><!-- row end-->
@@ -652,7 +652,7 @@
             <div class="col-lg-6">
                 <div class="faq-item xs-faq-item">
                     <div class="faq-content">
-                        <h3>Frequently </h3>
+                        <h3>Frequently</h3>
                         <h4>Ask question</h4>
                     </div>
                     <div id="accordion">
@@ -660,7 +660,7 @@
                             <div class="card-header" id="headingOne">
                                 <h5>
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">Why you work with us?
+                                            aria-expanded="true" aria-controls="collapseOne">Is A&V Garden fully insured?
                                     </button>
                                 </h5>
                             </div>
@@ -669,9 +669,7 @@
                                  data-parent="#accordion">
                                 <div class="card-body">
                                     <p>
-                                        Image darkness also make. Second divide third was fish abundantly. So, let all
-                                        had
-                                        set lesser a. Behold, hath void land so a given.
+                                        Yes, we have a public liability insurance.
                                     </p>
                                 </div>
                             </div>
@@ -681,7 +679,7 @@
                                 <h5>
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">Why you work with us?
+                                            aria-controls="collapseTwo">Does A&V Garden supply their own equipment?
                                     </button>
                                 </h5>
                             </div>
@@ -689,9 +687,7 @@
                                  data-parent="#accordion">
                                 <div class="card-body">
                                     <p>
-                                        Image darkness also make. Second divide third was fish abundantly. So, let all
-                                        had
-                                        set lesser a. Behold, hath void land so a given.
+                                        Yes, we provide our own equipment specific to the services required by the client.
                                     </p>
                                 </div>
                             </div>
@@ -702,7 +698,7 @@
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                        Why you work with us?
+                                        How do I pay?
                                     </button>
                                 </h5>
                             </div>
@@ -710,9 +706,7 @@
                                  data-parent="#accordion">
                                 <div class="card-body">
                                     <p>
-                                        Image darkness also make. Second divide third was fish abundantly. So, let all
-                                        had
-                                        set lesser a. Behold, hath void land so a given.
+                                        A&V Garden accepts payments by cash, bank transfer or cheque.
                                     </p>
                                 </div>
                             </div>
@@ -723,7 +717,7 @@
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseFour" aria-expanded="false"
                                             aria-controls="collapseFour">
-                                        Why you work with us?
+                                        Does A&V Garden take away all the garden wastes?
                                     </button>
                                 </h5>
                             </div>
@@ -731,9 +725,7 @@
                                  data-parent="#accordion">
                                 <div class="card-body">
                                     <p>
-                                        Image darkness also make. Second divide third was fish abundantly. So, let all
-                                        had
-                                        set lesser a. Behold, hath void land so a given.
+                                        Yes, we can take the garden wastes with us with few ad-hoc charge.
                                     </p>
                                 </div>
                             </div>
@@ -741,24 +733,72 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 pt-3">
                 <div class="client-logo-item faq-item">
                     <div class="faq-content">
-                        <h4>Top class client </h4>
-                        <p>Second divide third was fish abundantly. So, let all had set lesser a. Behold, hath void land so a given.</p>
+                        <h3>Other </h3>
+                        <h4>Questions </h4>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-6 single-client-logo">
-                          <%= image_tag 'client-logo/logo1.png' %>
+
+                    <div id="accordion">
+                        <div class="faq-single-item">
+                            <div class="card-header" id="headingFive">
+                                <h5>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                        Do you clean patio or drive way?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Yes, we are equipped with professional pressure washing machine that can remove any dirt and moss.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6 single-client-logo">
-                          <%= image_tag 'client-logo/logo2.png' %>
+
+                        <div class="faq-single-item">
+                            <div class="card-header" id="headingSix">
+                                <h5>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                        Do you need access to electricity?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        No, our equipment uses petrol. The only access we need is water when cleaning patio or drive way.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6 single-client-logo">
-                          <%= image_tag 'client-logo/logo3.png' %>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 single-client-logo">
-                          <%= image_tag 'client-logo/logo4.png' %>
+
+                        <div class="faq-single-item">
+                            <div class="card-header" id="headingSeven">
+                                <h5>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseSeven" aria-expanded="false"
+                                            aria-controls="collapseSeven">
+                                        Do you operate all throughout the year?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Yes, we provide wide array of services for all seasons. You can visit our services page for details.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -767,72 +807,6 @@
         </div><!-- row end-->
     </div><!-- .container end -->
 </section><!-- End faq and client logo section -->
-
-
-<!-- start testmonial section -->
-<section class="testmonial-v2-sec section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title-item section-title-v2-item">
-                   
-                    <h2 class="section-title">
-                         <span class="xs-title">Client feedback </span>
-                         <em>Our</em> client says
-                     </h2>
-                    <h3 class="hidden-title">Client</h3>
-                </div>
-            </div>
-        </div>
-        <div class="owl-carousel" id="testmonial-slider-v2">
-            <div class="single-testmonial">
-                <blockquote>Image darkness also make. Second divide third was fish abun dantly. So, let all had set
-                    lesser a.
-                    Behold, hath void land so a given face wherein.
-                </blockquote>
-                <div class="testmonial-author">
-                    <label>Anjelin Mali</label>
-                    <span>Designer</span>
-                    <%= image_tag 'author1.jpg' %>
-                </div>
-            </div>
-            <div class="single-testmonial">
-                <blockquote>Image darkness also make. Second divide third was fish abun dantly. So, let all had set
-                    lesser a.
-                    Behold, hath void land so a given face wherein.
-                </blockquote>
-                <div class="testmonial-author">
-                    <label>Anjelin Mali</label>
-                    <span>Designer</span>
-                    <%= image_tag 'author1.jpg' %>
-                </div>
-            </div>
-            <div class="single-testmonial">
-                <blockquote>Image darkness also make. Second divide third was fish abun dantly. So, let all had set
-                    lesser a.
-                    Behold, hath void land so a given face wherein.
-                </blockquote>
-                <div class="testmonial-author">
-                    <label>Anjelin Mali</label>
-                    <span>Designer</span>
-                    <%= image_tag 'author1.jpg' %>
-                </div>
-            </div>
-            <div class="single-testmonial">
-                <blockquote>Image darkness also make. Second divide third was fish abun dantly. So, let all had set
-                    lesser a.
-                    Behold, hath void land so a given face wherein.
-                </blockquote>
-                <div class="testmonial-author">
-                    <label>Anjelin Mali</label>
-                    <span>Designer</span>
-                    <%= image_tag 'author1.jpg' %>
-                </div>
-            </div>
-
-        </div> <!-- row end-->
-    </div><!-- .container end -->
-</section><!-- End testmonial section -->
 
 <!-- start tips and tricks section -->
 <section class="tips-tricks-sec section-padding">
@@ -853,11 +827,10 @@
 
         <div class="row">
             <div class="col-lg-4 col-md-12">
-                <div class="single-tips-tricks">
+                <div class="single-tips-tricks tips-tricks-item">
                     <%= cl_image_tag "avgarden/Photo-27", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
-                        <span>24 jan, 2018</span>
-                        <h3>Moving good spirit</h3>
+                        <h4>Moving good spirit</h4>
                         <a href="#" class="read_more">Read More  <i class="icon icon-arrow-right"></i> </a>
                     </div>
                     <div class="tag-line">Urban Garden</div>
@@ -868,7 +841,6 @@
                 <div class="single-tips-tricks tips-tricks-item">
                     <%= cl_image_tag "avgarden/Photo-4", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
-                        <span>24 jan, 2018</span>
                         <h4>Moving good spirit</h4>
                         <a href="#" class="read_more">Read More  <i class="icon icon-arrow-right"></i> </a>
                     </div>
@@ -879,7 +851,6 @@
                 <div class="single-tips-tricks tips-tricks-item">
                     <%= cl_image_tag "avgarden/Photo-35", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
-                        <span>24 jan, 2018</span>
                         <h4>Moving good spirit</h4>
                         <a href="#" class="read_more">Read More  <i class="icon icon-arrow-right"></i> </a>
                     </div>
@@ -890,7 +861,6 @@
     </div><!-- .container end -->
 </section><!-- End tips and tricks section -->
 
-
 <!-- header team-1 section -->
 <section class="team-v1-sec v2 section-padding section-bg-v2">
     <div class="container">
@@ -899,11 +869,9 @@
                 <div class="single-team-content">
                     <h2 class="column-title column-title2">Our <br/>expert team</h2>
                     <p>
-                    Neque porro quisquam est, qui dolor ipsum quia dolor sit amet consec  
-                    adipisci velit, sed quia non numquam eius modi 
-                    tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    Over the years we've learned a thing or two about what our customers want – well-informed advice, inspiration and help with their garden projects big and small.
                     </p>
-                    <a href="#" class="xs-btn">CONTACT US</a>
+                    <%= link_to 'CONTACT US', contact_path, class: "xs-btn" %>
                 </div>
             </div><!-- .col end -->
             <div class="col-lg-8">
@@ -912,8 +880,8 @@
                         <div class="single-team-item">
                             <%= image_tag cloudinary_url 'avgarden/profile-2.jpg' %>
                             <div class="single-team-cont">
-                                <h3>Victor</h3>
-                                <p>Neque porro quiquam est, qui dolor ipsum.</p>
+                                <h3>Vince</h3>
+                                <p>Gardener</p>
                             </div>
                         </div>
                     </div>
@@ -922,7 +890,7 @@
                             <%= image_tag cloudinary_url 'avgarden/profile-3.jpg' %>
                             <div class="single-team-cont">
                                 <h3>Alvin</h3>
-                                <p>Neque porro quiquam est, qui dolor ipsum.</p>
+                                <p>Gardener</p>
                             </div>
                         </div>
                     </div>
