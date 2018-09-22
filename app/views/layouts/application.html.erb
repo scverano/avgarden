@@ -16,6 +16,10 @@
     <%= render 'shared/header_top' %>
     <%= render 'shared/header_middle' %>
     <%= render 'shared/header_nav' %>
+    <% if signed_in? %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    <% end %>
     <%= yield %>
     <%= render 'shared/footer' %>
   </body>
