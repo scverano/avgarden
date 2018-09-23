@@ -16,7 +16,7 @@
     <div class="container">
         <div class="main-single-service-v2">
             <div class="single-service-post-content">
-                <%= image_tag 'services/single-post-img-v2.jpg' %>
+                <%= cl_image_tag "avgarden/Photo-10", :crop => "scale", :width => 1110 %>
                 <i class="icon-Our_service_1"></i>
                 
                 <h2 class="column-title">Lawn Care</h2>
@@ -91,62 +91,21 @@
                     <div class="key-benifits-content">
                         <h3><span class="light-text"> Benifits</span> of the service</h3>
                         <ul>
-                            <li><i class="fa fa-caret-right"></i>Firmament you'll their you given night.</li>
-                            <li><i class="fa fa-caret-right"></i>Their days hath made grass kind fourth.</li>
-                            <li><i class="fa fa-caret-right"></i>Deep it may first bring fowl brought..</li>
-                            <li><i class="fa fa-caret-right"></i>Male which bearing In called them subdue moved. </li>
-                            <li><i class="fa fa-caret-right"></i> Life and signs don not getting days to something. </li>
+                            <li><i class="fa fa-caret-right"></i>Avoid Accidental Damage</li>
+                            <li><i class="fa fa-caret-right"></i>Less Physical Labor</li>
+                            <li><i class="fa fa-caret-right"></i>Save Money</li>
+                            <li><i class="fa fa-caret-right"></i>Consistent Care</li>
+                            <li><i class="fa fa-caret-right"></i> Increased Home Value</li>
                         </ul>
                         <%= link_to 'CONTACT US', contact_path, class: "xs-btn fill" %>
                     </div>
                 </div><!-- col end-->
                 <div class="col-lg-6 col-md-5 xs-padding-0">
                     <div class="key-benifits-img">
-                    	<%= image_tag 'services/single-post-img-3.jpg' %>
+                        <%= cl_image_tag "avgarden/Photo-14", :crop => "scale", :width => 540 %>
                     </div>
                 </div>
             </div><!-- .row end -->
-
-            <div class="related-case-item">
-                <h3 class="xs-single-title">Related Case</h3>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                       <a href="#">
-                            <div class="single-related-case">
-                            	<%= image_tag 'case/case_1.jpg' %>
-                                <div class="overlay-content">
-                                    <h4 class="xs-single-title">Garden Care</h4>
-                                    <p>Eleifend dapibus magna potenti integer aptent faucibus gravida.</p>
-                                </div>
-                            </div>
-                       </a>
-                    </div><!-- .col end -->
-
-                     <div class="col-lg-4 col-md-4">
-                       <a href="#">
-                            <div class="single-related-case">
-                                <%= image_tag 'case/case_2.jpg' %>
-                                <div class="overlay-content">
-                                    <h4 class="xs-single-title">Garden Care</h4>
-                                    <p>Eleifend dapibus magna potenti integer aptent faucibus gravida.</p>
-                                </div>
-                            </div>
-                       </a>
-                    </div><!-- .col end -->
-
-                     <div class="col-lg-4 col-md-4">
-                       <a href="#">
-                            <div class="single-related-case">
-                            	<%= image_tag 'case/case_3.jpg' %>
-                                <div class="overlay-content">
-                                    <h4 class="xs-single-title">Garden Care</h4>
-                                    <p>Eleifend dapibus magna potenti integer aptent faucibus gravida.</p>
-                                </div>
-                            </div>
-                       </a>
-                    </div><!-- .col end -->
-                </div><!-- .row end -->
-            </div><!-- .releted case end -->
         </div><!-- .main-single-service-v2 end -->
     </div><!-- .container end -->
 </section><!-- End service inner section -->
