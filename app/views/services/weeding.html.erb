@@ -1,0 +1,52 @@
+<!--breadcumb start here-->
+<section class="banner-inner-sec" style="background-image:url(<%= cloudinary_url 'avgarden/banner-10.jpg' %>)">
+	<div class="banner-table">
+		<div class="banner-table-cell">
+			<div class="container">
+				<div class="banner-inner-content">
+					<h2 class="banner-inner-title">Weeding</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--breadcumb end here-->
+<!--  service inner section -->
+<section class="single-service-inner-v2-sec service-inner-sec section-padding">
+    <div class="container">
+        <div class="main-single-service-v2">
+            <div class="single-service-post-content">
+                <%= cl_image_tag "avgarden/Photo-42", :crop => "scale", :width => 600 %>
+                <i class="icon-Our_service_1"></i>
+                
+                <h2 class="column-title">
+                	Weeding
+              	</h2>
+                <p>
+                    Is the gardening equivalent of dusting and vacuuming your home. Love it or hate it, weeding is something that has to be done if you want your garden to look good.
+                </p>
+            </div><!--End single service-post-content -->
+
+            <div class="row key-benifits-item xs-mb-100 section-bg">
+                <div class="col-lg-6 col-md-7 align-self-center">
+                    <div class="key-benifits-content">
+                        <h3><span class="light-text"> Benifits</span> of the service</h3>
+                        <ul>
+                            <li><i class="fa fa-caret-right"></i>Avoid Accidental Damage</li>
+                            <li><i class="fa fa-caret-right"></i>Less Physical Labor</li>
+                            <li><i class="fa fa-caret-right"></i>Save Money</li>
+                            <li><i class="fa fa-caret-right"></i>Consistent Care</li>
+                            <li><i class="fa fa-caret-right"></i> Increased Home Value</li>
+                        </ul>
+                        <%= link_to 'CONTACT US', contact_path, class: "xs-btn fill" %>
+                    </div>
+                </div><!-- col end-->
+                <div class="col-lg-6 col-md-5 xs-padding-0">
+                    <div class="key-benifits-img">
+                        <%= cl_image_tag "avgarden/Photo-14", :crop => "scale", :width => 540 %>
+                    </div>
+                </div>
+            </div><!-- .row end -->
+        </div><!-- .main-single-service-v2 end -->
+    </div><!-- .container end -->
+</section><!-- End service inner section -->
