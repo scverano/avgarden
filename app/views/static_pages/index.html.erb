@@ -113,29 +113,9 @@
                                     <div class="about-tabs-content">
                                         <h4>Grass and Hedge cutting</h4>
                                         <p>
-                                            Sagittis sem blandit tempor donec ridiculus bibendum adipiscing pellentesque
-                                            sollicitudin, interdum aptent arcu rutrum penatibus sociis. Hendrerit
-                                            feugiat lobortis hendrerit. Auctor tortor.
+                                            We recommend trimming back several times throughout the year. We'll also keep an eye on the health of your hedging, looking for any signs of disease that may require attention. As well as trimming, we can shape and prune; we can even make sure your topiary bushes are kept in pristine condition.
                                         </p>
-                                        <ul>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Green whales years waters whose spirit.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Bibendum adipiscing pellentesque sollicitudin.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Green whales years waters.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Subdue unto wherein dry man heaven.
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="xs-btn xs-v2-btn">Learn More</a>
+                                        <%= link_to 'Learn More', grass_and_hedge_cutting_path, class: "xs-btn xs-v2-btn" %>
                                     </div>
                                 </div>
                             </div>
@@ -191,29 +171,9 @@
                                     <div class="about-tabs-content">
                                         <h3>Planting & Growth</h3>
                                         <p>
-                                            Sagittis sem blandit tempor donec ridiculus bibendum adipiscing pellentesque
-                                            sollicitudin, interdum aptent arcu rutrum penatibus sociis. Hendrerit
-                                            feugiat lobortis hendrerit. Auctor tortor.
+                                            No job is too small or too large. From shrubs to trees, we are happy to do the dirty work for you
                                         </p>
-                                        <ul>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Green whales years waters whose spirit.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Bibendum adipiscing pellentesque sollicitudin.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Green whales years waters.
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-checked2"></i>
-                                                Subdue unto wherein dry man heaven.
-                                            </li>
-                                        </ul>
-                                        <%= link_to 'Learn More', about_path, class: "xs-btn xs-v2-btn" %>
+                                        <%= link_to 'Learn More', planting_path, class: "xs-btn xs-v2-btn" %>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +349,6 @@
                         <li class="active filter" data-filter=".all">All</li>
                         <li class="filter" data-filter=".category1">Gardening</li>
                         <li class="filter" data-filter=".category2">Landscaping</li>
-                        <li class="filter" data-filter=".category3">Watering</li>
                     </ul>
 
                 </div>
@@ -398,15 +357,15 @@
 
         <div class="xs-portfolio-grid grid">
             <div class="xs-portfolio-grid-item category1 grid-item all">
-                <a href="#popup_1" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in">
+                <!-- <a href="#popup_1" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in"> -->
                     <%= cl_image_tag "avgarden/IMG_1609", :crop => "scale", :height => 300 %>
                     <div class="single-project-content">
                         <div class="xs-image-popup-icon">
                             <i class="icon icon-plus"></i>
                         </div>
-                        <h3 class="xs-single-title">Planting</h3>
+                        <h3 class="xs-single-title">Gardening</h3>
                         <p>
-                            Together also created. Meat winged seas waters herb saw he. Second female void.
+                            
                         </p>
                     </div>
                 </a><!-- .xs-single-portfolio-item END -->
@@ -477,15 +436,15 @@
             </div><!-- .xs-portfolio-grid-item END -->
 
             <div class="xs-portfolio-grid-item category2 grid-item all">
-                <a href="#popup_2" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in">
+                <!-- <a href="#popup_2" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in"> -->
                     <%= cl_image_tag "avgarden/IMG_1994", :crop => "scale", :height => 300 %>
                     <div class="single-project-content">
                         <div class="xs-image-popup-icon">
                             <i class="icon icon-plus"></i>
                         </div>
-                        <h3 class="xs-single-title">Planting</h3>
+                        <h3 class="xs-single-title">Landscapping</h3>
                         <p>
-                            Together also created. Meat winged seas waters herb saw he. Second female void.
+                            
                         </p>
                     </div>
                 </a><!-- .xs-single-portfolio-item END -->
@@ -554,16 +513,16 @@
                     </div>
                 </div>
             </div><!-- .xs-portfolio-grid-item END -->
-            <div class="xs-portfolio-grid-item category3 grid-item all">
-                <a href="#popup_3" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in">
+            <div class="xs-portfolio-grid-item category2 grid-item all">
+                <!-- <a href="#popup_3" class="xs-single-portfolio-item xs-image-popup" data-effect="mfp-zoom-in"> -->
                     <%= cl_image_tag "avgarden/IMG_1666", :crop => "scale", :height => 300 %>
                     <div class="single-project-content">
                         <div class="xs-image-popup-icon">
                             <i class="icon icon-plus"></i>
                         </div>
-                        <h3 class="xs-single-title">Planting</h3>
+                        <h3 class="xs-single-title">Landscapping</h3>
                         <p>
-                            Together also created. Meat winged seas waters herb saw he. Second female void.
+                            
                         </p>
                     </div>
                 </a><!-- .xs-single-portfolio-item END -->
@@ -830,10 +789,12 @@
                 <div class="single-tips-tricks tips-tricks-item">
                     <%= cl_image_tag "avgarden/Photo-27", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
-                        <h4>Moving good spirit</h4>
-                        <a href="#" class="read_more">Read More  <i class="icon icon-arrow-right"></i> </a>
+                        <h4>Grass and Hedge cutting</h4>
+                        <%= link_to grass_and_hedge_cutting_path, class: "read_more" do %>
+                            Read More <i class="icon icon-arrow-right"></i>
+                        <% end %>
                     </div>
-                    <div class="tag-line">Urban Garden</div>
+                    <div class="tag-line">Grass and Hedge cutting</div>
                 </div>
             </div>
 
@@ -841,20 +802,24 @@
                 <div class="single-tips-tricks tips-tricks-item">
                     <%= cl_image_tag "avgarden/Photo-4", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
-                        <h4>Moving good spirit</h4>
-                        <a href="#" class="read_more">Read More  <i class="icon icon-arrow-right"></i> </a>
+                        <h4>Garden waste removal</h4>
+                        <%= link_to garden_waste_removal_path, class: "read_more" do %>
+                            Read More <i class="icon icon-arrow-right"></i>
+                        <% end %>
                     </div>
-                    <div class="tag-line">Urban Garden</div>
+                    <div class="tag-line">Garden waste removal</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="single-tips-tricks tips-tricks-item">
                     <%= cl_image_tag "avgarden/Photo-35", :crop => "scale", :height => 500 %>
                     <div class="tips-tricks-content">
-                        <h4>Moving good spirit</h4>
-                        <a href="#" class="read_more">Read More  <i class="icon icon-arrow-right"></i> </a>
+                        <h4>Lawn care</h4>
+                        <%= link_to lawn_care_path, class: "read_more" do %>
+                            Read More <i class="icon icon-arrow-right"></i>
+                        <% end %>
                     </div>
-                    <div class="tag-line">Urban Garden</div>
+                    <div class="tag-line">Lawn care</div>
                 </div>
             </div>
         </div>
