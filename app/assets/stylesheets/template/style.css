@@ -1306,7 +1306,7 @@ h6 {
           position: absolute;
           right: 20px;
           top: 11px;
-          font-family: 'Fontawesome';
+          font-family: 'Font Awesome 5 Free';
           font-size: 14px;
           content: '\f105'; }
       .service-inner-sec .service-sidebar .widgets .services-link-item li.active a, .service-inner-sec .service-sidebar .widgets .services-link-item li:hover a {
@@ -2747,7 +2747,7 @@ h6 {
           left: 0;
           top: 0;
           content: '\f105';
-          font-family: 'fontawesome';
+          font-family: 'Font Awesome 5 Free';
           font-size: 14px;
           font-weight: 700; }
       .xs-footer-sec .footer-item .widgets ul.footer-contact-list li {

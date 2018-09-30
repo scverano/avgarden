@@ -16,9 +16,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-5 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
-                <div class="about-inner-img">
-                    <%= image_tag 'about/about_2.jpg' %>
-                </div>
+                <!-- <div class="about-inner-img"> -->
+                    <%= cl_image_tag "avgarden/Photo-82", :crop => "scale", :width => 600 %>
+                <!-- </div> -->
             </div><!-- col end -->
             <div class="col-lg-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
                 <div class="about-inner-content">
@@ -82,7 +82,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="single-why-choose-list">
-                                 <i class="icon-why-choose-4"></i>
+                                 <i class="fa fa-pound-sign"></i>
                                 <h3>No hidden cost</h3>
                                 <p>You will always be kept informed of any work carried out and costs incurred during your case.</p>
                             </div>
@@ -99,7 +99,8 @@
             </div>
             <div class="col-lg-3 align-self-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
                 <div class="why-choose-inner-img">
-                    <%= image_tag 'about/why-choose-us-inner.png' %>
+                    <%#= image_tag 'about/why-choose-us-inner.png' %>
+                    <%= cl_image_tag "avgarden/Photo-27", :crop => "scale", :width => 600 %>
                 </div>
             </div>
             
@@ -155,4 +156,4 @@
            </div>
        </div>
     </div><!-- .container end -->
-</section><!-- End ready to contact section -->
+</section><!-- End ready to contact section 

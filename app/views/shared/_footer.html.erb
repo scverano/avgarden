@@ -21,9 +21,9 @@
                             Fruit is their fill meat hath abundantly place meat don't stars so and which signs third second
                         </p>
                         <ul class="footer-social">
-                            <li>
-                                <a href="https://www.facebook.com/alvinvincentgarden/" target="_blank"><i class="fa fa-facebook-f"></i>acebook </a>
-                            </li>
+                            <!-- <li>
+                                
+                            </li> -->
                         </ul>
                     </div>
                 </div><!-- col end -->
@@ -69,7 +69,14 @@
                             </li>
                             <li>
                                 <i class="icon icon-envelope"></i>
-                                Our email aandvgarden23@yahoo.com
+                                Our email <%= mail_to "aandvgarden23@yahoo.com" %>
+                            </li>
+                            <li>
+                                <i class="icon icon-facebook"></i>
+                                Our Facebook page
+                                <%= link_to 'https://www.facebook.com/alvinvincentgarden/', target: 'blank' do %>
+                                    alvinvincentgarden
+                                <% end %>
                             </li>
                         </ul>
                     </div>
