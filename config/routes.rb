@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     get 'weeding', to: 'services#weeding'
     get 'planting', to: 'services#planting'
     get 'landscaping', to: 'services#landscaping'
+    get 'jet-wash-pressure-washer', to: 'services#jet_wash_pressure_washer'
   end
 
   match 'faq', to: 'static_pages#faq', via: :get

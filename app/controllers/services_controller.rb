@@ -28,4 +28,7 @@ class ServicesController < ApplicationController
 
   def landscaping
   end
+
+  def jet_wash_pressure_washer
+  end
 end
