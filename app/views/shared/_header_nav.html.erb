@@ -1,49 +1,51 @@
-<!-- header nav section -->
-<header class="xs-header-nav version-v2">
-    <div class="container">
-        <div class="row  menu-item">
-            <div class="col-lg-12">
-                <nav id="navigation1" class="navigation header-nav clearfix">
+<% if !user_signed_in? %>
+    <!-- header nav section -->
+    <header class="xs-header-nav version-v2">
+        <div class="container">
+            <div class="row  menu-item">
+                <div class="col-lg-12">
+                    <nav id="navigation1" class="navigation header-nav clearfix">
 
-                    <div class="nav-header">
-                        <!--  <a class="nav-brand" href="#"></a>-->
-                        <%= link_to root_path, class: "mobile-logo" do %>
-                            <%#= image_tag 'mobile_logo.png' %>
-                        <% end %>
-                        <div class="nav-toggle"></div>
-                    </div>
-
-                    <div class="nav-menus-wrapper clearfix">
-                        <ul class="nav-menu">
-                            <li class="active"><%= link_to 'Home', root_path %></li>
-                            <li>
-                                <%= link_to 'Services', services_path %>
-                                <ul class="nav-dropdown">
-                                    <li><%= link_to 'Lawn care', lawn_care_path %></li>
-                                    <li><%= link_to 'Grass and Hedge cutting', grass_and_hedge_cutting_path %></li>
-                                    <li><%= link_to 'Garden waste removal', garden_waste_removal_path %></li>
-                                    <li><%= link_to 'Garden shed making', garden_shed_making_path %></li>
-                                    <li><%= link_to 'Roof gutter cleaning', roof_gutter_cleaning_path %></li>
-                                    <li><%= link_to 'Garden maintenance', garden_maintenance_path %></li>
-                                    <li><%= link_to 'Fencing and Fence painting', fencing_and_fence_painting_path %></li>
-                                    <li><%= link_to 'Weeding', weeding_path %></li>
-                                    <li><%= link_to 'Planting', planting_path %></li>
-                                    <li><%= link_to 'Landscaping', landscaping_path %></li>
-                                    <li><%= link_to 'Jet wash / Pressure washer', jet_wash_pressure_washer_path %></li>
-                                </ul>
-                            </li>
-                            <li><%= link_to 'Our work', our_work_path %></li>
-                            <li><%= link_to 'FAQ', faq_path %></li>
-                            <li><%= link_to 'About us', about_path %></li>
-                            <li><%= link_to 'Contact', contact_path %></li>
-                        </ul>
-                        <div class="header-nav-right-info align-to-right">
-                            <label><i class="icon icon-phone3"></i> 07624 246477</label>
+                        <div class="nav-header">
+                            <!--  <a class="nav-brand" href="#"></a>-->
+                            <%= link_to root_path, class: "mobile-logo" do %>
+                                <%#= image_tag 'mobile_logo.png' %>
+                            <% end %>
+                            <div class="nav-toggle"></div>
                         </div>
-                    </div>
 
-                </nav>
-            </div>
-        </div><!-- .row end -->
-    </div><!-- .container end -->
-</header><!-- End header nav section -->
+                        <div class="nav-menus-wrapper clearfix">
+                            <ul class="nav-menu">
+                                <li class="active"><%= link_to 'Home', root_path %></li>
+                                <li>
+                                    <%= link_to 'Services', services_path %>
+                                    <ul class="nav-dropdown">
+                                        <li><%= link_to 'Lawn care', lawn_care_path %></li>
+                                        <li><%= link_to 'Grass and Hedge cutting', grass_and_hedge_cutting_path %></li>
+                                        <li><%= link_to 'Garden waste removal', garden_waste_removal_path %></li>
+                                        <li><%= link_to 'Garden shed making', garden_shed_making_path %></li>
+                                        <li><%= link_to 'Roof gutter cleaning', roof_gutter_cleaning_path %></li>
+                                        <li><%= link_to 'Garden maintenance', garden_maintenance_path %></li>
+                                        <li><%= link_to 'Fencing and Fence painting', fencing_and_fence_painting_path %></li>
+                                        <li><%= link_to 'Weeding', weeding_path %></li>
+                                        <li><%= link_to 'Planting', planting_path %></li>
+                                        <li><%= link_to 'Landscaping', landscaping_path %></li>
+                                        <li><%= link_to 'Jet wash / Pressure washer', jet_wash_pressure_washer_path %></li>
+                                    </ul>
+                                </li>
+                                <li><%= link_to 'Our work', our_work_path %></li>
+                                <li><%= link_to 'FAQ', faq_path %></li>
+                                <li><%= link_to 'About us', about_path %></li>
+                                <li><%= link_to 'Contact', contact_us_path %></li>
+                            </ul>
+                            <div class="header-nav-right-info align-to-right">
+                                <label><i class="icon icon-phone3"></i> 07624 246477</label>
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+            </div><!-- .row end -->
+        </div><!-- .container end -->
+    </header><!-- End header nav section -->
+<% end %>

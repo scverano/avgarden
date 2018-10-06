@@ -3661,7 +3661,7 @@ h6 {
     border-bottom: none; }
 
 /*----------- pagination -------*/
-.pagination li {
+/*.pagination li {
   display: inline-block; }
   .pagination li a {
     width: 40px;
@@ -3679,7 +3679,7 @@ h6 {
     margin: 0 10px; }
   .pagination li.active a {
     background: #008435;
-    color: #FFFFFF; }
+    color: #FFFFFF; }*/
 
 /*----------------- sidebar ---------*/
 .sidebar-widgets .xs-serach input:not([type="submit"]) {

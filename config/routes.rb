@@ -19,8 +19,10 @@ Rails.application.routes.draw do
 
   match 'faq', to: 'static_pages#faq', via: :get
   match 'about', to: 'static_pages#about', via: :get
-  match 'contact', to: 'static_pages#contact', via: :get
+  match 'contact', to: 'static_pages#contact', via: :get, as: :contact_us
   match 'our-work', to: 'static_pages#our_work', via: :get
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
+
+  resources :contacts
 end
