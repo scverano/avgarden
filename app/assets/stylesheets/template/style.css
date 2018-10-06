@@ -3034,7 +3034,7 @@ h6 {
               top: 7px;
               font-size: 14px;
               content: "\f0d8";
-              font-family: "fontawesome"; }
+              font-family: "Font Awesome 5 Free"; }
             .faq-and-client-logo-sec .faq-item .faq-single-item .card-header h5 .btn-link.collapsed:before {
               content: "\f0d7"; }
       .faq-and-client-logo-sec .faq-item .faq-single-item .card-body {
@@ -3816,7 +3816,7 @@ h6 {
       left: 0;
       top: 0;
       content: '\f0da ';
-      font-family: "FontAwesome"; }
+      font-family: "Font Awesome 5 Free"; }
 
 .blog-content-item.single-blog-details .single-blog-item {
   margin-bottom: 30px; }
