@@ -28,7 +28,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     respond_to do |format|
-      if @contact.save
+      if verify_recaptcha(action: 'new', minimum_score: 0.5) && @contact.save
         format.html { redirect_back fallback_location: root_path, notice: 'Thanks for contacting us! We will be in touch with you shortly.' }
         format.json { render :show, status: :created, location: @contact }
       else
@@ -63,13 +63,13 @@ class ContactsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_contact
-      @contact = Contact.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_contact
+    @contact = Contact.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def contact_params
-      params.require(:contact).permit(:name, :email, :number, :message)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def contact_params
+    params.require(:contact).permit(:name, :email, :number, :message)
+  end
 end
