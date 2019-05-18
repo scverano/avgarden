@@ -1,40 +1,37 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-    <h4 class="text-success">Contacts</h4>
-
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Email</th>
-          <th scope="col">Number</th>
-          <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @contacts.each do |contact| %>
+      <h4 class="text-success">Contacts</h4>
+      <table class="table">
+        <thead class="thead-dark">
           <tr>
-            <td><%= contact.name %></td>
-            <td><%= mail_to contact.email %></td>
-            <td><%= contact.number %></td>
-            <td>
-              <span class="float-right">
-                <%= link_to 'Show', contact, class: 'btn btn-success btn-sm' %>
-                <%= link_to 'Edit', edit_contact_path(contact), class: 'btn btn-success btn-sm' %>
-                <%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %>
-              </span>
-            </td>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Number</th>
+            <th scope="col"></th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
-
-    <div class="text-center pb-5">
-      <%= page_entries_info @contacts %>
-      <%= paginate @contacts %>
-    </div>
-
+        </thead>
+        <tbody>
+          <% @contacts.each do |contact| %>
+            <tr>
+              <td><%= contact.name %></td>
+              <td><%= mail_to contact.email %></td>
+              <td><%= contact.number %></td>
+              <td>
+                <span class="float-right">
+                  <%= link_to 'Show', contact, class: 'btn btn-success btn-sm' %>
+                  <%#= link_to 'Edit', edit_contact_path(contact), class: 'btn btn-success btn-sm' %>
+                  <%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %>
+                </span>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <div class="text-center pb-5">
+        <%= page_entries_info @contacts %>
+        <%= paginate @contacts %>
+      </div>
     </div>
   </div>
 </div>
