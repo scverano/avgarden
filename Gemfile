@@ -39,7 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Others
 gem 'font-awesome-sass', '~> 5.3.1'
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'jquery-rails'
 gem 'cloudinary'
 gem 'figaro'
