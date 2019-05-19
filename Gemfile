@@ -43,7 +43,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'cloudinary'
 gem 'figaro'
-gem 'devise'
+gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'kaminari'
 
